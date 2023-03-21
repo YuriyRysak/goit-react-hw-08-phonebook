@@ -2,11 +2,11 @@ import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { Helmet } from "react-helmet";
 import { fetchContacts } from "redux/contacts/operations";
-import { ContactForm } from './ContactForm/ContactForm';
-import { ContactList } from './ContactList/ContactList';
-import { Filter } from './Filter/Filter';
+import { ContactForm } from '../components/ContactForm/ContactForm.jsx';
+import { ContactList } from '../components/ContactList/ContactList.jsx';
+import { Filter } from '../components/Filter/Filter.jsx';
 import {getIsLoading } from "redux/contacts/selectors";
-import {Loader} from './Loader/Loader';
+import {Loader} from '../components/Loader/Loader.jsx';
 
 export default function Contacts() {
   const dispatch = useDispatch();
