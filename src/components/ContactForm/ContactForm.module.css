@@ -1,68 +1,43 @@
-.NameEditor{
-    width: 300px;
-    display: block;
-    align-items: center;
-    text-align: center;
-    justify-content: space-between;
-    padding-left: 40px;
-    padding-right: 40px;
+.form {
+  display: flex;
+  flex-direction: column;
 }
 
-/* .NameEditor__textarea:hover{
-    color: aliceblue;
-
-
-} */
-
-.NameEditor__button:hover{
-   background-color: blue;
-   color: aliceblue;
-   border-bottom: none;
-
+.formLabel,
+.formName,
+.formNumber {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  flex-direction: column;
+  margin: 1rem auto;
+  align-items: center;
+  font-size: large;
+  text-align: left;
+  padding: 0.5rem 1rem 0.5rem 1rem;
 }
 
+.formBtn {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  background-color: rgba(23, 26, 32, 0.8);
+  border: none;
+  border-radius: 6px;
+  color: #fff;
+  flex-grow: 1;
+  font-family: SFProText-Regular, Helvetica, Arial, sans-serif;
+  font-size: 15px;
+  height: 36px;
+  line-height: 20px;
+  margin-left: 8px;
+  margin-right: 6px;
+  min-width: 185px;
+  padding: 0 16px 0 16px;
+  color: white;
+  cursor: pointer;
+}
 
-form {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border-radius: 2px;
-    padding: 30px;
-    border: solid 1px;
-    
-    box-shadow: 0px 0px 8px 0px #33333347;
-  }
-  
-  input {
-    color: black;
-    margin-top: 20px;
-    font-size: 20px;
-    padding: 10px;
-    border-radius: 0.1rem;
-    border: solid 1px;
-    border-radius: 2px;
-    /* width: 70%; */
-    display: block;
-    
-  }
-  
-  form > button {
-    font-size: 20px;
-    font-weight: 800;
-    color: black;
-    margin-top: 30px;
-    padding: 15px;
-    border: none;
-    cursor: pointer;
-    background-color:rgb(red, green, blue);
-    border-radius: 2px;
-    transition-duration: 250ms;
-  }
-  
-  form > button:hover {
-    /* transform: scale(1.1); */
-    background-color: blue;
-    color: white;
-  }
-  
+.formBtn:hover {
+  background-color: rgba(23, 26, 32, 1);
+  cursor: pointer;
+}

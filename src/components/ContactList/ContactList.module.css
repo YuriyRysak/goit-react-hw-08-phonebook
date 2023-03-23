@@ -1,55 +1,43 @@
-/* .TodoList {
-    width: 400px;
+/* .contactList {
+
+ 
 
 }
-.TodoList__items{
-    display: flex;
-    align-items: center;
-    text-align: center;
-    justify-content: space-between;
-    padding: 20px;
-}
 
-.TodoList__text {
-    margin-top: 0;
-    margin-bottom: 0;
-    margin-right: 10px;
-} */
-
-ul {
+.contactListItem {
     display: flex;
     flex-direction: column;
-    list-style: none;
-    padding: 0;
-  }
   
-  li {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 15px;
-  }
-  
-  p {
-    font-size: 20px;
-    font-weight: 500;
-    margin-right: 30px;
-  }
-  
-  li > button {
-    font-size: 15px;
-    font-weight: 700;
-    color: black;
-    padding: 5px;
-    border: none;
-    cursor: pointer;
-    border-radius: 1px;
-    transition-duration: 400ms;
-    margin-left: 10px;
-  }
-  
-  li > button:hover {
-      background-color: blue;
-      color: white;
-  }
+}
+
+
+
+.contactListItemIcon {
+
+} */
+
+.contactListItemBtn {
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  align-items: right;
+  background-color: rgba(23, 26, 32, 0.8);
+  border: none;
+  border-radius: 6px;
+  color: #fff;
+  flex-grow: 1;
+  font-family: SFProText-Regular, Helvetica, Arial, sans-serif;
+  font-size: 15px;
+  height: 36px;
+  line-height: 20px;
+  margin-left: 8px;
+  margin-right: 6px;
+  min-width: 50px;
+  padding: 0 16px 0 16px;
+  color: white;
+  cursor: pointer;
+}
+
+.contactListItemBtn:hover {
+  background-color: rgba(23, 26, 32, 1);
+  cursor: pointer;
+}

@@ -1,6 +1,4 @@
-
-import './Filter.module.css';
-
+import css from './Filter.module.css';
 import { useDispatch, useSelector } from 'react-redux';
 import { getFilter } from 'redux/contacts/selectors';
 import { setFilter } from 'redux/contacts/filterSlice';
@@ -15,9 +13,9 @@ export const Filter = () => {
 
   return (
     <div>
-      <label>Find contacts by Name </label>
+      <label className={css.filterLabel}>Find contacts by Name </label>
       <input
-       
+        className={css.filterName}
         type="text"
         name="filter"
         placeholder="Enter filter"
