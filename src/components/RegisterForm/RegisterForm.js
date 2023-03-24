@@ -19,35 +19,35 @@ export const RegisterForm = () => {
   };
 
   return (
-    <form className={css.form} onSubmit={handleSubmit} autoComplete="off">
-      <label className={css.label}>
+    <form className={css.Register_form} onSubmit={handleSubmit} autoComplete="off">
+      <label className={css.Register_label}>
         Username
         <input
-          className={css.label}
+          className={css.Register_label_input}
           type="text"
           name="name"
           placeholder="Enter user name"
         />
       </label>
-      <label className={css.label}>
+      <label className={css.Register_label}>
         Email
         <input
-          className={css.label}
+          className={css.Register_label_input}
           type="email"
           name="email"
           placeholder="Enter email"
         />
       </label>
-      <label className={css.label}>
+      <label className={css.Register_label}>
         Password
         <input
-          className={css.label}
+          className={css.Register_label_input}
           type="password"
           name="password"
           placeholder="Enter password"
         />
       </label>
-      <button className={css.formBtn} type="submit">
+      <button className={css.Register_formBtn} type="submit">
         Register
       </button>
     </form>
