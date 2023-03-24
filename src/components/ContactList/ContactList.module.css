@@ -1,11 +1,11 @@
-ul {
+.ContactList_ul {
   display: flex;
   flex-direction: column;
   list-style: none;
   padding: 0;
 }
 
-li {
+.ContactList_li {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -13,13 +13,13 @@ li {
   margin-bottom: 15px;
 }
 
-p {
+/* p {
   font-size: 20px;
   font-weight: 500;
   margin-right: 30px;
-}
+} */
 
-li > button {
+.ContactList_button {
   font-size: 15px;
   font-weight: 700;
   color: black;
@@ -31,7 +31,7 @@ li > button {
   margin-left: 10px;
 }
 
-li > button:hover {
+.ContactList_button:hover {
     background-color: blue;
     color: white;
 }

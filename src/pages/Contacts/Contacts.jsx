@@ -7,7 +7,8 @@ import { ContactList } from 'components/ContactList/ContactList';
 import { fetchContacts } from 'redux/contacts/operations';
 import { Filter } from 'components/Filter/Filter';
 import { Loader } from 'components/Loader/Loader';
-import css from 'pages/Contacts/Comtarts.module.css';
+import css from './Contacts.module.css';
+
 export default function Contacts() {
   const dispatch = useDispatch();
   const isLoading = useSelector(getIsLoading);
@@ -17,7 +18,7 @@ export default function Contacts() {
   }, [dispatch]);
 
   return ( 
-    <section>
+    <section className={css.section}>
        <Helmet>
       <title>Phonebook</title>
       </Helmet>
