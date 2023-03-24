@@ -1,19 +1,17 @@
-.filterName {
+label {
   display: flex;
   flex-direction: column;
-  margin: 0.5rem auto 1rem;
   align-items: center;
-  font-size: large;
-  text-align: left;
-  padding: 0.5rem 1rem 0.5rem 1rem;
+
 }
 
-.filterLabel {
-  display: flex;
-  flex-direction: column;
-  margin: 0.5rem auto;
-  align-items: center;
-  font-size: large;
-  text-align: left;
-  padding: 0.5rem 1rem 0.5rem 1rem;
+label > input {
+  
+  margin: 0;
+}
+
+.spanFind {
+  font-size: 22px;
+  font-weight: 500;
+  margin-bottom: 5px;
 }

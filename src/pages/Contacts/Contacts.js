@@ -6,7 +6,8 @@ import { getIsLoading } from 'redux/contacts/selectors';
 import { ContactList } from 'components/ContactList/ContactList';
 import { fetchContacts } from 'redux/contacts/operations';
 import { Filter } from 'components/Filter/Filter';
-
+import { Loader } from 'components/Loader/Loader';
+import css from 'pages/Contacts/Comtarts.module.css';
 export default function Contacts() {
   const dispatch = useDispatch();
   const isLoading = useSelector(getIsLoading);
@@ -15,15 +16,15 @@ export default function Contacts() {
     dispatch(fetchContacts());
   }, [dispatch]);
 
-  return (
-    <>
-      <Helmet>
-        <title>Phonebook</title>
+  return ( 
+    <section>
+       <Helmet>
+      <title>Phonebook</title>
       </Helmet>
-      <ContactForm />
-      <div>{isLoading && 'Request in progress...'}</div>
-      <Filter />
-      <ContactList />
-    </>
+      <ContactForm /> 
+      <div>{isLoading && <Loader/>}</div>     
+      <Filter/>
+      <ContactList/>
+    </section>
   );
 }
